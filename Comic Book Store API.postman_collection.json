@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "b5cb03e1-dfbe-4b6c-9dc2-52556537852e",
+		"name": "Comic Book Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35989788"
+	},
+	"item": [
+		{
+			"name": "Create Comic Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Batman: Year One\",\r\n  \"author\": \"Frank Miller\",\r\n  \"year\": 1987,\r\n  \"price\": 20,\r\n  \"discount\": 10,\r\n  \"pages\": 96,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A retelling of Batman's origins.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comicbooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comicbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Comic Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comicbooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comicbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Perticular Comic Book Details By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/comicbooks/670f9b48ec387d42d6a840aa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comicbooks",
+						"670f9b48ec387d42d6a840aa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Comic Book By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": 2500,\r\n  \"condition\": \"used\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comicbooks/670f9b48ec387d42d6a840aa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comicbooks",
+						"670f9b48ec387d42d6a840aa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comic Book By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comicbooks/670f9b48ec387d42d6a840aa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comicbooks",
+						"670f9b48ec387d42d6a840aa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
